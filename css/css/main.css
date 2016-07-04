@@ -329,6 +329,20 @@ a {
 #bottom-nav li p {
   font-size: 1rem;
 }
+.bottom-tab {
+  display: block;
+  background: #fff;
+  height: 3.4em;
+  line-height: 3.4em;
+  border-top: 1px solid #ddd;
+  overflow: hidden;
+}
+.bottom-tab a.account {
+  padding: 1em 1.8em;
+  font-size: 1.4em;
+  color: #fff;
+  background: #f35929;
+}
 .form-item {
   position: relative;
   font-size: 16px;
@@ -473,6 +487,9 @@ a {
 }
 .padr4 {
   padding-right: 0.4em;
+}
+.padl40 {
+  padding-left: 4em;
 }
 .padl4 {
   padding-left: 0.4em;
@@ -1095,4 +1112,153 @@ a {
 }
 .border-no {
   border: none;
+}
+.tick {
+  display: inline-block;
+  width: 1.6em;
+  height: 1.6em;
+  padding-top: .4em;
+  margin: 0 .4em;
+  float: left;
+}
+.tick input[type="checkbox"] {
+  display: inline-block;
+  width: 1.6em;
+  height: 1.6em;
+  -webkit-appearance: none;
+  background: url(../../images/tick.png) no-repeat;
+  background-position: 0;
+  background-size: 200%;
+}
+.tick input[type="checkbox"]:checked {
+  background-position: -1.5em;
+}
+.tick input[type="checkbox"] .active {
+  background-position: -1.5em;
+}
+.shop-box {
+  display: block;
+  width: 100%;
+  padding-bottom: 2.8em;
+  background: #ebe6e4;
+}
+.shop-box li {
+  display: block;
+  margin-bottom: 1em;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+  overflow: hidden;
+}
+.shop-box .shop-tit {
+  display: block;
+  width: 100%;
+  height: 2.4em;
+  line-height: 2.4em;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+}
+.shop-box .shop-tit span {
+  display: inline-block;
+  float: left;
+}
+.shop-box .shop-tit a.arrow-next {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  color: #f35929;
+  float: left;
+  background: url(../../images/arrow-next.png) left center no-repeat;
+}
+.shop-box .shopbox-info {
+  display: block;
+  width: 100%;
+  padding: 1em .4em;
+  overflow: hidden;
+}
+.shop-box .checkbox {
+  display: block;
+  width: 7%;
+  padding-top: 3em;
+}
+.shop-box .checkbox input[type="checkbox"] {
+  display: inline-block;
+  width: 1.6em;
+  height: 1.6em;
+  -webkit-appearance: none;
+  background: url(../../images/tick.png) no-repeat;
+  background-position: 0;
+  background-size: 200%;
+}
+.shop-box .checkbox input[type="checkbox"]:checked {
+  background-position: -1.5em;
+}
+.shop-box .checkbox input[type="checkbox"] .active {
+  background-position: -1.5em;
+}
+.shop-box .shopic {
+  display: block;
+  width: 20%;
+  padding: 2%;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+.shop-box .shopic img {
+  width: 100%;
+}
+.shop-box .shopin {
+  display: block;
+  width: 64%;
+}
+.shop-box .shopin p {
+  width: 100%;
+  margin-bottom: .4em;
+}
+.shop-box .shopin .numadd {
+  display: block;
+  width: 70%;
+  margin-top: .8em;
+}
+.shop-box .shopin .numadd a {
+  display: inline-block;
+  float: left;
+  width: 1.4em;
+  height: 1.4em;
+  font-size: 1.2em;
+  text-align: center;
+  border: 1px solid #f35929;
+  color: #f35929;
+}
+.shop-box .shopin .numadd a:hover {
+  background: #f35929;
+  color: #fff;
+}
+.shop-box .shopin .numadd a.active {
+  background: #f35929;
+  color: #fff;
+}
+.shop-box .shopin .numadd input {
+  display: inline-block;
+  float: left;
+  width: 3em;
+  height: 1.7em;
+  margin: 0 .4em;
+  border: 1px solid #f35929;
+  padding-left: .4em;
+}
+.shop-box .shopin a.btn-del {
+  display: inline-block;
+  padding: .4em .8em;
+  line-height: 1em;
+  font-size: 1em;
+  color: #3c6191;
+  text-align: center;
+  overflow: hidden;
+  border: 1px solid #3c6191;
+  margin-top: .6em;
+}
+.shop-box .shopin a:hover.btn-del {
+  background: #f35929;
+  border: none;
+  color: #fff;
 }
