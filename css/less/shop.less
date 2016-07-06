@@ -23,24 +23,25 @@
 	}
 }
 .shop-box{
-	display: block;
-	width: 100%;
-	padding-bottom: 2.8em;
+	position: relative;
+	z-index: 1;
 	background: #ebe6e4;
+	overflow: hidden;
 	li{
 		display: block;
-		margin-bottom: 1em;
+		margin-bottom: .6em;
 		border-top: 1px solid #ddd;
 		border-bottom: 1px solid #ddd;
 		background: #fff;
 		overflow: hidden;
 	}
 	.shop-tit{
-		display: block;
+		display: flex;
 		width: 100%;
 		height: 2.4em;
 		line-height: 2.4em;
 		border-bottom: 1px solid #ddd;
+		padding-left: .4em;
 		overflow: hidden;
 		span{
 			display: inline-block;
@@ -52,11 +53,11 @@
 			height: 2em;
 			color: #f35929;
 			float: left;
-			background: url(../../images/arrow-next.png) left center no-repeat;
+			margin-left: .4em;
 		}
 	}
 	.shopbox-info{
-		display: block;
+		display: flex;
 		width: 100%;
 		padding: 1em .4em;
 		overflow: hidden;
@@ -147,4 +148,131 @@
 			color: #fff;
 		}
 	}
+	.receive-info{
+		display: flex;
+		width: 100%;
+		height: 6em;
+		background: #fff;
+		margin-bottom: .8em;
+		padding: .4em;
+		.re-in{
+			display: block;
+			width: 86%;
+			float: left;
+		}
+		.re-next{
+			display: block;
+			width: 14%;
+			float: left;
+			text-align: center;
+			line-height: 6em;
+		}
+		.address{
+			margin-top: .4em;
+		}
+	}
+	.shopoint{
+		display: block;
+		padding: 1em .4em;
+		overflow: hidden;
+		border-top: 1px solid #ddd;
+		span{
+			em{
+				margin-left: .4em;
+			}
+			input{
+				border: none;
+			}
+		}
+	}
+	.paymoney{
+		position: relative;
+		display: block;
+		width: 96%;
+		height: 2.8em;
+		line-height: 2.8em;
+		font-size: 1.2em;
+		margin: .4em 0;
+		padding: 0 2%;
+	}
+	.payway{
+		position: relative;
+		display: block;
+		width: 100%;
+		h2.tit{
+			width: 100%;
+			height: 2.4em;
+			line-height: 2.4em;
+			font-size: 1.2em;
+			color: #f35929;
+			padding: 0 .4em;
+		}
+		ul{
+			display: block;
+			width: 100%;
+			border-bottom: 1px solid #ddd;
+			li{
+				display: block;
+				height: 2.8em;
+				line-height: 2.8em;
+				margin: 0 auto;
+				padding: 0 .4em;
+				border-bottom: none;
+				input[type="radio"]{
+					-webkit-appearance:none;
+					display: inline-block;
+					width: 1em;
+					height: 1em;
+					border: 1px solid #f35929;
+					border-radius: .5em;
+					vertical-align: middle;
+				}
+				input[type="radio"]:focus{
+					background: #f35929;
+				}
+				span{
+					margin-left: .8em;
+				}
+				a{
+					display: inline-block;
+				}
+			}
+		}
+	}
+	.success{
+		display: block;
+		padding-top: 2em;
+		height: 5.6em;
+		text-align: center;
+		font-size: 2em;
+		color: #f35929;
+		i{
+			font-size: 2em !important;
+		}
+	}
+	.btn-tab{
+		display: block;
+		height: 4em;
+		text-align: center;
+		overflow: hidden;
+		a{
+			display: inline-block;
+			color: #fff;
+			margin: 0 .6em;
+			font-size: 1.2em;
+			padding: .6em 2em;
+		}
+	}
+}
+a.btn-pay{
+	display: block;
+	width: 100%;
+	height: 3.4em;
+	max-width: 640px;
+	margin: 0 auto;
+	font-size: 1.2em;
+	color: #fff;
+	line-height: 3.4em;
+	background: #f35929;
+	text-align: center;
 }
