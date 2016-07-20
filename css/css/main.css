@@ -146,6 +146,9 @@ a {
 .bg-slan {
   background: #3c6191;
 }
+.bg-dhui {
+  background: #ebe6e4;
+}
 .c-btn0 {
   font-family: 'Microsoft YaHei';
   font-size: 0.7em;
@@ -360,6 +363,25 @@ a {
 .bottom-tab a:hover.account {
   background: #c94922;
 }
+.bottom-tab a.cancel {
+  padding: .6em 1em;
+  background: #aaa;
+  border-radius: .4em;
+  color: #ffffff;
+}
+.bottom-tab a:hover.cancel {
+  color: rgba(255, 255, 255, 0.6);
+}
+.bottom-tab a.confirm {
+  padding: .6em 1em;
+  background: #f35929;
+  border-radius: .4em;
+  color: #ffffff;
+  margin-right: .4em;
+}
+.bottom-tab a:hover.confirm {
+  color: rgba(255, 255, 255, 0.6);
+}
 .form-item {
   position: relative;
   font-size: 16px;
@@ -525,6 +547,9 @@ a {
 }
 .mgb10 {
   margin-bottom: 10px !important;
+}
+.mgb76 {
+  margin-bottom: 76px !important;
 }
 .mgl10 {
   margin-left: 10px !important;
@@ -1139,7 +1164,6 @@ a {
   height: 1.6em;
   padding-top: .4em;
   margin: 0 .4em;
-  float: left;
 }
 .tick input[type="checkbox"] {
   display: inline-block;
@@ -1167,7 +1191,7 @@ a {
   margin-bottom: .6em;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background: #fff;
+  background: #fff !important;
   overflow: hidden;
 }
 .shop-box .shop-tit {
@@ -1475,7 +1499,438 @@ a.btn-pay {
   display: block;
   float: left;
   width: 25%;
-  padding: 1em auto;
+  margin: .4em auto;
   text-align: center;
+}
+.myorder li a.ic-order {
+  display: block;
+  width: 4em;
+  height: 4em;
+  line-height: 4em;
+  border: 1px solid #f35929;
+  border-radius: 2em;
+  margin: .4em auto;
+}
+.myorder li a.ic-order i {
+  font-size: 2em;
+  color: #f35929;
+}
+.myorder li a:hover.ic-order {
+  background: #f35929;
+  transition: .6s;
+  -moz-transition: .6s;
+  -webkit-transition: .6s;
+}
+.myorder li a:hover.ic-order i {
+  color: #fff;
+}
+.order-li {
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+  overflow: hidden;
+}
+.order-li li {
+  display: block;
+  height: 2.8em;
+  line-height: 2.8em;
+  padding: 0 .4em;
   border-bottom: 1px solid #ddd;
+}
+.message {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+.message li {
+  display: block;
+  padding: 0 .4em;
+  border-bottom: 1px solid #ddd;
+}
+.message li a {
+  display: inline-block;
+  width: 100%;
+}
+.message li a .tit {
+  display: block;
+  height: 2em;
+  line-height: 2m;
+  margin-bottom: .4em;
+}
+.message li p {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 1em;
+}
+.message li:hover {
+  background: #ddd;
+}
+.footprint {
+  display: block;
+  width: 100%;
+}
+.footprint h2.tit {
+  display: block;
+  height: 2.4em;
+  line-height: 2.4em;
+  padding-left: .4em;
+  font-weight: normal;
+  border-bottom: 1px solid #ddd;
+}
+.footprint li {
+  display: block;
+  padding: .8em .4em;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+}
+.footprint li a {
+  display: inline-block;
+  width: 100%;
+}
+.footprint li .printimg {
+  display: block;
+  float: left;
+  width: 6em;
+  height: 6em;
+  border: 1px solid #f35929;
+  overflow: hidden;
+}
+.footprint li .printimg img {
+  width: 100%;
+}
+.footprint li .printext {
+  display: block;
+  float: left;
+  width: 68%;
+  padding-left: 2%;
+}
+.footprint li .printext h3 {
+  color: #3c6191;
+}
+.footprint li .printext .discount {
+  margin-left: 2em;
+  text-decoration: line-through;
+}
+.footprint li:hover {
+  background: #ddd;
+}
+.order-box {
+  position: relative;
+  z-index: 1;
+  background: #ebe6e4;
+  overflow: hidden;
+}
+.order-box .order-tab {
+  display: block;
+  height: 3.4em;
+  margin-bottom: .8em;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+}
+.order-box .order-tab li {
+  display: block;
+  float: left;
+  width: 25%;
+  height: 3.4em;
+  text-align: center;
+}
+.order-box .order-tab li a {
+  display: inline-block;
+  width: 100%;
+  margin-top: .5em;
+  height: 2.4em;
+  line-height: 2.4em;
+  border-right: 1px solid #ddd;
+}
+.order-box .order-tab li:hover {
+  border-bottom: 3px solid #f35929;
+}
+.order-box .order-tab .current {
+  border-bottom: 3px solid #f35929;
+}
+.order-box .orderlist {
+  display: block;
+  width: 100%;
+}
+.order-box .orderlist li {
+  display: block;
+  background: #fff;
+  margin-bottom: 1em;
+}
+.order-box .ordertit {
+  display: block;
+  height: 2.4em;
+  line-height: 2.4em;
+  padding: 0 .4em;
+}
+.order-box .ordertit .arrow-next {
+  margin-left: .6em;
+}
+.order-box .orderbox-info {
+  display: flex;
+  padding: .4em;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+.order-box .orderbox-info .orderpic {
+  display: block;
+  width: 6em;
+  height: 6em;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+.order-box .orderbox-info .orderpic img {
+  width: 100%;
+}
+.order-box .orderbox-info .orderin {
+  display: block;
+  width: 70%;
+  padding-left: 2%;
+  overflow: hidden;
+}
+.order-box .order-btn {
+  display: block;
+  width: 100%;
+  height: 5.4em;
+  line-height: 2.4em;
+  text-align: right;
+}
+.order-box .order-btn .txt {
+  display: block;
+  width: 100%;
+}
+.order-box .order-btn .btn {
+  display: block;
+  width: 100%;
+  height: 3em;
+  line-height: 2.8em;
+}
+.order-box .order-btn .btn a {
+  display: inline-block;
+  width: 6em;
+  margin-right: .4em;
+  text-align: center;
+  color: #fff;
+  border-radius: .4em;
+}
+.order-box .order-btn .btn a:hover {
+  color: rgba(255, 255, 255, 0.6);
+  transition: .2s;
+}
+.order-box .order-btn .btn a.btn-hui {
+  background: #aaa;
+}
+.order-box .order-btn .btn a.btn-cheng {
+  background: #f35929;
+}
+.order-box .order-state {
+  display: block;
+  margin-bottom: 1em;
+  overflow: hidden;
+}
+.order-box .order-state li {
+  display: block;
+  height: auto;
+  line-height: 2.8em;
+  border-bottom: 1px solid #ddd;
+  padding: 0 .4em;
+}
+.order-box .order-state li .tit {
+  font-size: 1.2em;
+  margin-right: 2em;
+}
+.order-box .order-trans {
+  display: block;
+  padding: 0 .4em;
+  line-height: 2.4em;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1em;
+}
+.setup {
+  display: block;
+  width: 100%;
+  padding-top: .4em;
+}
+.setup .seticon {
+  display: block;
+  height: 4.8em;
+  line-height: 4.8em;
+  padding: 0 .4em;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+}
+.setup .seticon span {
+  display: block;
+}
+.setup .seticon span em {
+  display: inline-block;
+}
+.setup .seticon span a {
+  display: inline-block;
+}
+.setup .seticon .ic-user {
+  width: 3.8em;
+  height: 3.8em;
+  margin: .5em 1em;
+  border-radius: 1.9em;
+  border: 2px solid #f35929;
+  overflow: hidden;
+}
+.setup .seticon .ic-user img {
+  width: 100%;
+}
+.setup .setlist {
+  display: block;
+  height: 3em;
+  line-height: 3em;
+  padding: 0 .4em;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+}
+a.exit {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: #f35929;
+  color: #fff;
+  text-align: center;
+  font-size: 1.2em;
+}
+.addlist {
+  display: block;
+  width: 100%;
+  margin-bottom: .8em;
+  overflow: hidden;
+}
+.addlist li {
+  display: block;
+  background: #fff;
+  margin-bottom: .8em;
+  overflow: hidden;
+}
+.addlist li h2 {
+  display: block;
+  height: 2.4em;
+  line-height: 2.4em;
+  padding: 0 .4em;
+}
+.addlist li h2 span.company {
+  width: 72%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.addlist li .site {
+  display: block;
+  border-bottom: 1px solid #ddd;
+  padding: .4em;
+}
+.addlist li .operate {
+  display: block;
+  padding: .4em;
+}
+.addlist li .operate span a {
+  display: inline-block;
+  margin: 0 .4em .4em .4em;
+  padding: .2em 1.2em;
+  color: #fff;
+  border-radius: .2em;
+}
+.addlist li .operate span a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+.Addinput {
+  display: block;
+  width: 100%;
+}
+.Addinput li {
+  display: block;
+  line-height: 2.4em;
+  padding: 0 .4em;
+  background: #fff;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+}
+.Addinput li label {
+  display: inline-block;
+  width: 30%;
+}
+.Addinput li input {
+  display: inline-block;
+  width: 60%;
+  border: none;
+  line-height: 2.4em;
+}
+.Addinput li textarea {
+  width: 100%;
+  line-height: 2.4em;
+  border: none;
+}
+.binding {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+.binding .bindphone {
+  display: block;
+  line-height: 3.4em;
+  padding: 0 .4em;
+  background: #fff;
+  margin: .8em 0;
+  overflow: hidden;
+}
+.binding .bindphone a {
+  display: block;
+  background: #f35929;
+  height: 2.4em;
+  line-height: 2.4em;
+  padding: 0 1.2em;
+  margin-top: .5em;
+  color: #fff;
+  border-radius: .4em;
+}
+.binding .bindphone a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+.binding .bindphone li {
+  display: block;
+  height: 3.4em;
+  line-height: 3.4em;
+  padding: 0 .4em;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+}
+.binding .bindphone li input {
+  border: none;
+  height: 3.4em;
+  line-height: 3.4em;
+}
+.binding a.next {
+  display: inline-block;
+  width: 100%;
+  height: 2.4em;
+  line-height: 2.4em;
+  text-align: center;
+  color: #fff;
+  font-size: 1.2em;
+  background: #f35929;
+}
+.binding a:hover.next {
+  color: rgba(255, 255, 255, 0.5);
+}
+.binding .success {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.binding .success img {
+  width: 50%;
+}
+.binding .success p {
+  font-size: 1.2em;
+  color: #f35929;
 }
