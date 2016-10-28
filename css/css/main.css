@@ -4,8 +4,8 @@
   height: 100%;
 }
 body {
-  font: 12px/1.5 tahoma, 'Microsoft YaHei', arial, sans-serif;
-  font-family: arial;
+  font: 12px/1.5 tahoma, 'Microsoft YaHei', arial, sans-serif, 'Hiragino Sans GB';
+  font-family: arial, 'Microsoft YaHei', sans-serif, 'Hiragino Sans GB';
   height: 100%;
   color: #333;
   background: #F5F5F5;
@@ -342,7 +342,7 @@ a {
   font-size: 1.2rem;
 }
 #bottom-nav li p {
-  font-size: 1rem;
+  font-size: .6rem;
 }
 .bottom-tab {
   display: block;
@@ -783,10 +783,19 @@ a {
   padding: 0.1rem 0.5rem;
   font-size: 1.1rem;
   font-weight: 500;
+  color: #3c6191;
 }
 .information-list p {
   padding: 0.1rem 0.5rem;
   font-size: 1rem;
+}
+.information-list p .w50 {
+  display: inline-block;
+  overflow: hidden;
+  width: 50%;
+  font-size: .8rem;
+  line-height: 1.6rem;
+  vertical-align: middle;
 }
 .title-Arow h3 {
   height: 1.6em !important;
@@ -1933,4 +1942,93 @@ a.exit {
 .binding .success p {
   font-size: 1.2em;
   color: #f35929;
+}
+.search {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  padding: 8px;
+  height: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 2em;
+  margin: 12px 8px 0 8px;
+  background: #fff;
+}
+.search select {
+  display: inline-block;
+  float: left;
+  border: none;
+  width: 4.4rem;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 1rem;
+  color: #3c6191;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: url(../../images/arrow-down.png) no-repeat scroll right center transparent;
+}
+.search select::-ms-expand {
+  display: none;
+}
+.search input {
+  display: inline-block;
+  height: 2rem;
+  line-height: 2rem;
+  border: none;
+  width: 64%;
+  float: left;
+  font-size: 1.4em;
+}
+.search a {
+  display: inline-block;
+  float: right;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  vertical-align: middle;
+}
+.result {
+  display: block;
+  overflow: hidden;
+  background: #eee;
+  padding: 8px 0;
+  margin: 8px 0;
+  color: #3c6191;
+  text-align: center;
+  font-size: 1.4em;
+}
+.classbox {
+  display: block;
+  overflow: hidden;
+  padding: 4px 8px;
+  background: #fff;
+}
+.classbox h2.title {
+  font-size: 1.4em;
+  color: #3c6191;
+  margin-top: 8px;
+  font-weight: 500;
+}
+.classbox .item {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+}
+.classbox .item li a {
+  display: block;
+  float: left;
+  font-size: 1em;
+  padding: 4px 8px;
+  border: 1px solid #f35929;
+  border-radius: 4px;
+  margin: 4px;
+}
+.classbox .item a:hover,
+.classbox .item a:active,
+.classbox .item a.active {
+  background: #f35929;
+  color: #ffffff;
 }
