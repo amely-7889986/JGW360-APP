@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-status-bar-style" c     ontent="black">
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="Expires" CONTENT="-1">
     <meta http-equiv="Cache-Control" CONTENT="no-cache">
@@ -15,6 +15,7 @@
     <link href="../css/css/swiper-3.3.1.min.css" rel="stylesheet" type="text/css" />
     <link href="../font/iconfont.css" rel="stylesheet" type="text/css" />
     <link href="../css/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="../css/css/mobiscroll.custom-2.5.2.min.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <div class="header" id="header">
@@ -24,13 +25,25 @@
             </div>
             <div class="flex2">
                 <div class="form-title">
-                    确认订单
+                    确认预采信息
                 </div>
             </div>
         </div>
     </div>
     <div class="container">
-        <div class="page-width padd28">
+        <div class="page-width mgb76">
+            <div class="repurch-time">
+                <ul>
+                    <li>
+                        <label class="col-cheng l-left font14">预采时间：</label>
+                        <input type="text" class="l-left" id="date">
+                    </li>
+                    <li>
+                        <label class="col-cheng l-left font14">预采数量：</label>
+                        <input type="text" class="l-left">
+                    </li>
+                </ul>
+            </div>
             <div class="shop-box">
                 <a href="../usercenter/manageAdd.html" class="receive-info">
                     <div class="re-in">
@@ -74,8 +87,30 @@
         <div class="bottom-tab">
             <span class="padl40">合计：</span>
             <span class="padl4 col-cheng">￥200.00</span>
-            <span class="l-right"><a href="payorder.html" class="account">提交订单</a></span>
+            <span class="l-right"><a href="usercenter/payorder.html" class="account">确认预采</a></span>
         </div>
     </div>
+
 </body>
+<script src="../js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="../js/swiper-3.3.1.jquery.min.js" type="text/javascript"></script>
+<script src="../js/mobiscroll.custom-2.5.2.min.js"></script>
+
+<script>  
+$(function () {  
+    $("#date").mobiscroll().date({  
+        theme: "android-ics light",  
+        lang: "zh",  
+        cancelText: null,  
+        dateFormat: 'yy/mm', //返回结果格式化为年月格式  
+        // wheels:[], 设置此属性可以只显示年月，此处演示，就用下面的onBeforeShow方法,另外也可以用treelist去实现  
+        // onBeforeShow: function (inst) { inst.settings.wheels[0].length>2?inst.settings.wheels[0].pop():null; }, //弹掉“日”滚轮  
+        headerText: function (valueText) { //自定义弹出框头部格式  
+            array = valueText.split('/');  
+            return array[0] + "年" + array[1] + "月";  
+        }  
+    });  
+})   
+</script>
+
 </html>

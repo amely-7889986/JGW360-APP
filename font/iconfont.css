@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1477902747200'); /* IE9*/
-  src: url('iconfont.eot?t=1477902747200#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1477902747200') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1477902747200') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1477902747200#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1477965825645'); /* IE9*/
+  src: url('iconfont.eot?t=1477965825645#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1477965825645') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1477965825645') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1477965825645#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -27,6 +27,8 @@
 .icon-shoucang:before { content: "\e635" !important; }
 
 .icon-deliver:before { content: "\e604"; }
+
+.icon-del0:before { content: "\e636"; }
 
 .icon-vipcard:before { content: "\e605"; }
 

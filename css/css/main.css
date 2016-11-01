@@ -391,6 +391,13 @@ a {
   color: #ffffff;
   font-size: 1.4em;
 }
+#bottom-nav .shopbtn a.onebook {
+  width: 60%;
+  background: #f35929;
+  line-height: 3em;
+  color: #ffffff;
+  font-size: 1.4em;
+}
 .bottom-tab {
   display: block;
   max-width: 640px;
@@ -1327,6 +1334,120 @@ a {
   display: block;
   overflow: hidden;
   color: #333333;
+}
+.addcarbox {
+  display: block;
+  overflow: hidden;
+}
+.addcarbox .prosec {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+}
+.addcarbox .prosec .pic {
+  display: block;
+  overflow: hidden;
+  width: 8em;
+  height: 8em;
+  padding: 4px;
+  border: 1px solid #ddd;
+}
+.addcarbox .prosec .pic img {
+  width: 100%;
+}
+.addcarbox .prosec .info {
+  display: block;
+  overflow: hidden;
+  line-height: 2.4em;
+  margin-left: .4em;
+}
+.addcarbox .prosec .icon-del0 {
+  position: absolute;
+  right: .2em;
+}
+.addcarbox .prosize {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+}
+.addcarbox .prosize .tag {
+  display: block;
+  overflow: hidden;
+}
+.addcarbox .prosize .tag a {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 4px 8px;
+  border: 1px solid #f35929;
+  border-radius: 4px;
+  margin: 2px 4px;
+}
+.addcarbox .pronum {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+  font-size: 1.4em;
+}
+.addcarbox .pronum a {
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  line-height: 1.4em;
+  text-align: center;
+  border: 1px solid #333;
+}
+.addcarbox .pronum input {
+  display: inline-block;
+  width: 4em;
+  height: 1.4em;
+  border: 1px solid #333;
+  margin: 0 4px;
+}
+.addcarbox a.confirm {
+  display: inline-block;
+  width: 100%;
+  height: 2.4em;
+  line-height: 2.4em;
+  background: #f35929;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.4em;
+  margin-top: 8px;
+}
+.timebox {
+  display: block;
+  overflow: hidden;
+  background: #f6f1ee;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.timebox .timecount {
+  margin: 4px 0;
+  font-size: 1.8em;
+}
+.timebox .timecount i {
+  color: #f35929;
+}
+.repurch-time {
+  display: block;
+  overflow: hidden;
+  padding: 8px;
+  background: #fff;
+}
+.repurch-time li {
+  height: 2.4em;
+  line-height: 2.4em;
+  border-bottom: 1px solid #ddd;
+  padding: 8px 4px;
+}
+.repurch-time input {
+  border: 1px solid #333;
+  height: 2em;
+  width: 14em;
+  box-sizing: border-box;
 }
 .border-b {
   border-bottom: #ddd solid 1px;

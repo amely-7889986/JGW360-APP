@@ -29,5 +29,90 @@
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="page-width">
+            <div class="swiper-container swiper-container1 jixiepic">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="##"><img src="../update/gongcheng02.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="##"><img src="../update/gongcheng02.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="##"><img src="../update/gongcheng02.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="##"><img src="../update/gongcheng02.jpg" alt=""></a></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination1"></div>
+            </div>
+        </div>
+        <div class="page-width mgb76">
+            <div class="moneybox">
+                <p class="title">力源液压振动锤     (全新)</p>
+                <div class="timebox">
+                    <p class="col-shong">预采时间</p>
+                    <div class="timecount"><i>10</i>月<i>10</i>日<i class="padl4">10:00</i>--<i>10</i>月<i>31</i>日<i class="padl4">24:00</i></div>
+                    <p class="col-hei">距离预采截止还有：<span>1天2小时56分49秒</span></p>
+                </div>
+                <p class="font14">预采价：<span class="col-hong font14">¥1870.00</span></p>
+                <p class="font14"><span class="text-d">原价：¥2983.00</span><span class="l-right col-lan">折扣:9.8折</span></p>
+                <p><span class="col-hui">库存：2100</span><span class="padl4 col-hei">销量：12</span></p>
+            </div>
+            <div class="mgt10 probox-tab">
+                <ul>
+                    <li><a class="active" href="#">商品参数</a></li>
+                    <li><a href="#">商品详情</a></li>
+                    <li><a href="#">商品评价</a></li>
+                    <li><a href="#">关于我们</a></li>
+                </ul>
+            </div>
+            <div class="probox-info">
+                <div class="parameter">
+                    <h3>商品参数 DETAIL</h3>
+                    <ul>
+                        <li><span>产品名称：</span><span>力源液压振动锤</span></li>
+                        <li><span>商品类别：</span><span>大宗预制构件</span></li>
+                        <li><span>商品名称：</span><span>500AB-125</span></li>
+                        <li><span>长度：</span><span>6-15</span></li>
+                        <li><span>每米重量：</span><span>0.222t/m</span></li>
+                        <li><span>机身内存：</span><span>16GB 64GB</span></li>
+                        <li><span>产地：</span><span>中国广东佛山</span></li>
+                        <li><span>品牌：</span><span>建华</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="bottom-nav">
+    <div class="shopbtn page-width">
+        <a href="../index.html" class="home"><i class="icon iconfont icon-shouye"></i><p>首页</p></a>
+        <a href="##" class="collect"><i class="icon iconfont icon-shoucang1"></i><p>收藏</p></a>
+        <a href="javascript:void(0)" class="onebook" id="onebook">一键预约</a>
+    </div>
+</div>
+
+
 </body>
+<script src="../js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="../js/swiper-3.3.1.jquery.min.js" type="text/javascript"></script>
+<script>
+var swiper = new Swiper('.swiper-container1', {
+    pagination: '.swiper-pagination1',
+    paginationClickable: true,
+    spaceBetween: 10,
+    autoplay: 5000,//可选选项，自动滑动
+});
+</script>
+<script src="../js/layer.js" type="text/javascript"></script>
+<script>
+    $('#onebook').on('click', function(){
+        layer.open({
+        type: 1,
+        content: '<div class="addcarbox page-width"><div class="prosec"><div class="pic l-left"><img src="../update/gongcheng02.jpg" alt=""></div><div class="l-left info"><p class="col-hong font18">¥1870.00</p><p class="font14"><span>库存:</span><span>2348</span></p><p class="col-cheng font10">请选择规格</p></div><a href=""><i class="icon iconfont col-hui icon-del0"></i></a></div><div class="prosize"><p class="col-cheng">规格：</p><div class="tag"><a href="javascipt:void(0)">500*100A</a><a href="javascipt:void(0)">500*100A</a><a href="javascipt:void(0)">500*100A</a><a href="javascipt:void(0)">500*100A</a><a href="javascipt:void(0)">500*100A</a><a href="javascipt:void(0)">500*100A</a><a href="javascipt:void(0)">500*100A</a></div></div><div class="pronum"><span class="l-left">购买数量：</span><span class="l-right"><a href="javascipt:void(0)" class="l-left">+</a><input type="text" class="l-left"><a href="javascipt:void(0)" class="l-left">-</a></span></div><a href="" class="confirm">确定</a></div>',
+        anim: 'up',
+        style: 'position:fixed; bottom:0; left:0; width: 100%; max-height: 400px; padding:10px 0; border:none; background:#fff;',
+      });
+    });
+</script>
+<script>
+$("a.collect").click(function(){
+  $("a.collect i.icon-shoucang1").toggleClass("icon-shoucang");
+});
+</script>
 </html>
