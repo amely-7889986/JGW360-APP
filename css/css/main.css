@@ -1431,6 +1431,61 @@ a {
 .timebox .timecount i {
   color: #f35929;
 }
+.usedform {
+  display: block;
+  overflow: hidden;
+  padding: 4px 8px;
+  border-bottom: 1px solid #ddd;
+}
+.usedform h3 {
+  height: 2.4em;
+  line-height: 2.4em;
+  border-bottom: 1px solid #ddd;
+}
+.usedbox {
+  display: block;
+  overflow: hidden;
+  height: 2.8em;
+  line-height: 2.8em;
+  margin: 8px 0;
+}
+.usedbox label {
+  display: inline-block;
+  overflow: hidden;
+  width: 40%;
+  text-align: right;
+  float: left;
+}
+.usedbox select {
+  display: inline-block;
+  height: 2.4em;
+  margin-top: .2em;
+  float: left;
+  width: 50%;
+  border: 1px solid #aaa;
+}
+.usedbox input {
+  height: 2em;
+  margin-top: .4em;
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+  width: 50%;
+}
+.usedbox a.submit {
+  display: block;
+  background: #f35929;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.4em;
+}
+.usedprize {
+  display: block;
+  overflow: hidden;
+  padding: 12px 8px;
+  background: #f6f1ee;
+  border: 1px solid #ddd;
+  margin: 8px;
+}
 .repurch-time {
   display: block;
   overflow: hidden;
@@ -1798,7 +1853,7 @@ a.btn-pay {
 .myorder li {
   display: block;
   float: left;
-  width: 25%;
+  width: 20%;
   margin: .4em auto;
   text-align: center;
 }
@@ -1923,34 +1978,6 @@ a.btn-pay {
   background: #ebe6e4;
   overflow: hidden;
 }
-.order-box .order-tab {
-  display: block;
-  height: 3.4em;
-  margin-bottom: .8em;
-  border-bottom: 1px solid #ddd;
-  background: #fff;
-}
-.order-box .order-tab li {
-  display: block;
-  float: left;
-  width: 25%;
-  height: 3.4em;
-  text-align: center;
-}
-.order-box .order-tab li a {
-  display: inline-block;
-  width: 100%;
-  margin-top: .5em;
-  height: 2.4em;
-  line-height: 2.4em;
-  border-right: 1px solid #ddd;
-}
-.order-box .order-tab li:hover {
-  border-bottom: 3px solid #f35929;
-}
-.order-box .order-tab .current {
-  border-bottom: 3px solid #f35929;
-}
 .order-box .orderlist {
   display: block;
   width: 100%;
@@ -2048,6 +2075,42 @@ a.btn-pay {
   line-height: 2.4em;
   border-bottom: 1px solid #ddd;
   margin-bottom: 1em;
+}
+.order-tab .class {
+  position: relative;
+  font-size: 1.2em;
+  padding: 0.5em;
+  height: 2.8em;
+  overflow: hidden;
+  width: 100%;
+  background: #fff;
+  margin: 0 auto .8em auto;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.order-tab .class a {
+  position: relative;
+  display: inline-block;
+  height: 2em;
+  line-height: 200%;
+  padding: 0 .6em;
+}
+.order-tab .class .current {
+  color: #f35929;
+  border-bottom: 3px solid #f35929;
+}
+.order-tab .Roll {
+  position: relative;
+  white-space: nowrap;
+  width: 105%;
+  padding-right: 2em;
+  height: 7em;
+  overflow: scroll;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
 }
 .setup {
   display: block;
@@ -2290,6 +2353,28 @@ a.exit {
   text-align: center;
   font-size: 1.4em;
 }
+.classearch {
+  display: block;
+  border-radius: 1.5em;
+  height: 3em;
+  line-height: 3em;
+  border: 1px solid #aaa;
+  margin: 8px;
+  padding-left: 12px;
+}
+.classearch input {
+  display: inline-block;
+  float: left;
+  width: 80%;
+  height: 2.2em;
+  margin-top: .4em;
+  border: none;
+  margin-left: 8px;
+}
+.classearch a {
+  display: inline-block;
+  float: left;
+}
 .classbox {
   display: block;
   overflow: hidden;
@@ -2322,4 +2407,27 @@ a.exit {
 .classbox .item a.active {
   background: #f35929;
   color: #ffffff;
+}
+.errorbox {
+  display: block;
+  overflow: hidden;
+}
+.errorbox .pic {
+  display: block;
+  overflow: hidden;
+  padding: 1em;
+}
+.errorbox .pic img {
+  width: 100%;
+}
+.errorbox a.backindex {
+  display: block;
+  overflow: hidden;
+  margin: 8px auto;
+  width: 8em;
+  height: 3em;
+  line-height: 3em;
+  background: #f35929;
+  color: #ffffff;
+  text-align: center;
 }

@@ -15,6 +15,7 @@
     <link href="../css/css/swiper-3.3.1.min.css" rel="stylesheet" type="text/css" />
     <link href="../font/iconfont.css" rel="stylesheet" type="text/css" />
     <link href="../css/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="../css/need/layer.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <div class="header" id="header">
@@ -33,21 +34,25 @@
         <div class="page-width padd28">
             <div class="order-box">
                 <div class="order-tab">
-                    <ul class="tab-nav">
-                        <li><a href="#">全部</a></li>
-                        <li class="current"><a href="#">待付款</a></li>
-                        <li><a href="#">待收货</a></li>
-                        <li><a style="border-right: none;" href="#">待评价</a></li>
-                    </ul>
+                    <div id="class" class="class">
+                        <div class="tab-nav Roll">
+                            <a href="#" class="current">全部</a>
+                            <a href="#">待卖家确认</a>
+                            <a href="#">待买家确认</a>
+                            <a href="#">待发货</a>
+                            <a href="#">已发货</a>
+                            <a href="#">已完成</a>
+                            <a style="border-right: none;" href="#">已取消</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="orderlist">
                     <ul>
                         <li>
                             <div class="ordertit">
-                                <span class="tick"><input type="checkbox" checked="checked"></span>
                                 <span>aaaa店铺</span>
                                 <span><a href="javascript:void(0)" class="arrow-next"><i class="icon iconfont">&#xe626;</i></a></span>
-                                <span class="l-right col-cheng">等待买家付款</span>
+                                <span class="l-right col-cheng">等待卖家确认</span>
                             </div>
                             <div class="orderbox-info">
                                 <div class="orderpic">
@@ -63,17 +68,15 @@
                                 <div class="txt">
                                 <span>共1件商品 合计：</span><span class="col-cheng">￥200.00</span></div>
                                 <div class="btn">
-                                    <a href="javascript:void(0)" class="btn-hui">取消订单</a>
-                                    <a href="payorder.html" class="btn-cheng">付款</a>
+                                    <a href="javascript:void(0)" id="cancel1" class="btn-hui">取消订单</a>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="ordertit">
-                                <span class="tick"><input type="checkbox"></span>
                                 <span>ccc店铺</span>
                                 <span><a href="javascript:void(0)" class="arrow-next"><i class="icon iconfont">&#xe626;</i></a></span>
-                                <span class="l-right col-cheng">等待买家付款</span>
+                                <span class="l-right col-cheng">等待卖家确认</span>
                             </div>
                             <div class="orderbox-info">
                                 <div class="orderpic">
@@ -89,17 +92,15 @@
                                 <div class="txt">
                                 <span>共1件商品 合计：</span><span class="col-cheng">￥200.00</span></div>
                                 <div class="btn">
-                                    <a href="javascript:void(0)" class="btn-hui">取消订单</a>
-                                    <a href="payorder.html" class="btn-cheng">付款</a>
+                                    <a href="javascript:void(0)" id="cancel2" class="btn-hui">取消订单</a>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="ordertit">
-                                <span class="tick"><input type="checkbox"></span>
                                 <span>XXX店铺</span>
                                 <span><a href="javascript:void(0)" class="arrow-next"><i class="icon iconfont">&#xe626;</i></a></span>
-                                <span class="l-right col-cheng">等待买家付款</span>
+                                <span class="l-right col-cheng">等待卖家确认</span>
                             </div>
                             <div class="orderbox-info">
                                 <div class="orderpic">
@@ -115,8 +116,8 @@
                                 <div class="txt">
                                 <span>共1件商品 合计：</span><span class="col-cheng">￥200.00</span></div>
                                 <div class="btn">
-                                    <a href="javascript:void(0)" class="btn-hui">取消订单</a>
-                                    <a href="payorder.html" class="btn-cheng">付款</a>
+                                    <a href="javascript:void(0)" id="cancel3" class="btn-hui">取消订单</a>
+                                    <a href="payorder.html" class="btn-cheng">确定</a>
                                 </div>
                             </div>
                         </li>
@@ -125,16 +126,38 @@
             </div>
         </div>
     </div>
-    <div id="bottom-nav">
-        <div class="bottom-tab">
-            <span class="tick"><input type="checkbox"></span>
-            <span>全选</span>
-            <span class="padl40">合计：</span>
-            <span class="padl4 col-cheng">￥200.00</span>
-            <span class="l-right"><a href="payorder.html" class="account">结算</a></span>
-        </div>
-    </div>
 </body>
 <script src="../js/jquery-1.9.1.min.js" type="text/javascript"></script>
 <script src="../js/swiper-3.3.1.jquery.min.js" type="text/javascript"></script>
+<script src="../js/layer.js" type="text/javascript"></script>
+<script>
+    $('#cancel1,#cancel2,#cancel3').on('click', function(){
+        layer.open({
+            title: [
+              '填写取消原因',
+              'background-color: #3c6191; color:#fff;'
+            ]
+            ,content: '<textarea name="reason" id="" rows="10" style="display:block;width: 100%;padding:8px;" placeholder="请输入你取消订单的原因"></textarea><a href="" class="bg-cheng col-bai" style="display: block;padding: 8px;margin-top:12px;">确定</a>'
+        });
+    });
+</script>
+<script>
+function showCurr(obj){
+var Roll = $(obj).find('.Roll');
+var RollWidth = Roll.width();
+var objWidth = $(obj).innerWidth();
+var currA = Roll.find('a.current');
+/*if(RollWidth <= objWidth || currA.length<0){return false};*/
+var inPage = Math.floor(currA.position().left/objWidth);
+Roll.stop(true,true).animate({scrollLeft:inPage*objWidth},400);
+}
+
+$(document).ready(function(){
+showCurr('.class');
+});
+
+$(window).resize(function(){
+showCurr('.class');
+})
+</script>
 </html>

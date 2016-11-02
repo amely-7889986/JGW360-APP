@@ -63,7 +63,7 @@
 	li{
 		display: block;
 		float: left;
-		width: 25%;
+		width: 20%;
 		margin: .4em auto;
 		text-align: center;
 		a.ic-order{
@@ -188,34 +188,6 @@
 	z-index: 1;
 	background: #ebe6e4;
 	overflow: hidden;
-	.order-tab{
-		display: block;
-		height: 3.4em;
-		margin-bottom: .8em;
-		border-bottom: 1px solid #ddd;
-		background: #fff;
-		li{
-			display: block;
-			float: left;
-			width: 25%;
-			height: 3.4em;
-			text-align: center;
-			a{
-				display: inline-block;
-				width: 100%;
-				margin-top: .5em;
-				height: 2.4em;
-				line-height: 2.4em;
-				border-right: 1px solid #ddd;
-			}
-		}
-		li:hover{
-			border-bottom: 3px solid #f35929;
-		}
-		.current{
-			border-bottom: 3px solid #f35929;
-		}
-	}
 	.orderlist{
 		display: block;
 		width: 100%;
@@ -315,6 +287,44 @@
 		border-bottom: 1px solid #ddd;
 		margin-bottom: 1em;
 	}
+}
+.order-tab{
+    .class{
+        position: relative;
+        font-size: 1.2em;
+        padding: 0.5em;
+        height: 2.8em;
+        overflow: hidden;
+        width: 100%;
+        background: #fff;
+        margin: 0 auto .8em auto;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        a{
+            position: relative;
+            display: inline-block;
+            height: 2em;
+            line-height: 200%;
+            padding: 0 .6em;
+        }
+        .current {
+            color: #f35929;
+            border-bottom: 3px solid #f35929;
+        }
+    }
+    .Roll{
+        position: relative;
+        white-space: nowrap;
+        width: 105%;
+        padding-right: 2em;
+        height: 7em;
+        overflow: scroll;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+    }
 }
 .setup{
 	display: block;
