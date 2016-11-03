@@ -1138,6 +1138,15 @@ a {
   -o-text-overflow: ellipsis;
   white-space: nowrap;
 }
+.Tlist-box li a.delect {
+  display: inline-block;
+  overflow: hidden;
+  padding: 4px 12px;
+  color: #ffffff;
+  background: #f35929;
+  border-radius: 4px;
+  margin-left: .5em;
+}
 .jc-tuan li {
   float: left;
   position: relative;
@@ -2296,6 +2305,92 @@ a.exit {
 .binding .success p {
   font-size: 1.2em;
   color: #f35929;
+}
+.transbox {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+  line-height: 2em;
+  margin-bottom: .8em;
+  padding: 8px;
+}
+.transline {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+  padding: .8em 0 .8em 1.4em;
+}
+.transline li {
+  display: block;
+  overflow: hidden;
+  border-left: 1px solid #ddd;
+  padding-bottom: 8px;
+}
+.transline li i.point {
+  display: block;
+  position: absolute;
+  left: 1.2em;
+  width: .6em;
+  height: .6em;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #aaa;
+}
+.transline li .info {
+  display: block;
+  overflow: hidden;
+  margin-left: 2em;
+  border-bottom: 1px solid #ddd;
+  padding: 0 0 8px 0;
+}
+.transline li.active i.point {
+  width: 1em;
+  height: 1em;
+  left: .8em;
+  background: #f35929;
+  border: 1px solid #e00c0c;
+}
+.my-comment {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 1em;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+.my-comment h3 {
+  margin: 4px auto;
+}
+.ownerbox {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 1em;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+.ownerbox a.pic {
+  display: block;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  margin-bottom: .4em;
+}
+.ownerbox a.pic img {
+  width: 100%;
+}
+.ownerbox .followtime {
+  display: block;
+  overflow: hidden;
+  height: 2.4em;
+  line-height: 2.4em;
+}
+.ownerbox a.unfollow {
+  display: inline-block;
+  overflow: hidden;
+  padding: 0 12px;
+  border-radius: 4px;
+  background: #f35929;
+  color: #ffffff;
 }
 .search {
   display: block;

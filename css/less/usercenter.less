@@ -511,3 +511,93 @@ a.exit{
 		}
 	}
 }
+
+// 物流信息
+.transbox{
+	display: block;
+	overflow: hidden;
+	.bg-bai;
+	line-height: 2em;
+	margin-bottom: .8em;
+	padding: 8px;
+}
+.transline{
+	display: block;
+	overflow: hidden;
+	.bg-bai;
+	padding: .8em 0 .8em 1.4em;
+	li{
+		display: block;
+		overflow: hidden;
+		border-left: 1px solid #ddd;
+		padding-bottom: 8px;
+		i.point{
+			display: block;
+			position: absolute;
+			left: 1.2em;
+			width: .6em;
+			height: .6em;
+			border-radius: 50%;
+			overflow: hidden;
+			background: #aaa;
+		}
+		.info{
+			display: block;
+			overflow: hidden;
+			margin-left: 2em;
+			border-bottom: 1px solid #ddd;
+			padding:0 0 8px 0;
+		}
+	}
+	li.active{
+		i.point{
+			width: 1em;
+			height: 1em;
+			left: .8em;
+			.bg-cheng;
+			border: 1px solid #e00c0c;
+		}
+	}
+}
+.my-comment{
+	display: block;
+	overflow: hidden;
+	.bg-bai;
+	margin-bottom: 1em;
+	padding: 8px;
+	border-bottom: 1px solid #ddd;
+	h3{
+		margin: 4px auto;
+	}
+}
+.ownerbox{
+	display: block;
+	overflow: hidden;
+	.bg-bai;
+	margin-bottom: 1em;
+	padding: 8px;
+	border-bottom: 1px solid #ddd;
+	a.pic{
+		display: block;
+		overflow: hidden;
+		border: 1px solid #ddd;
+		margin-bottom: .4em;
+		img{
+			width: 100%;
+		}
+	}
+	.followtime{
+		display: block;
+		overflow: hidden;
+		height: 2.4em;
+		line-height: 2.4em;
+	}
+	a.unfollow{
+		display: inline-block;
+		overflow: hidden;
+		padding: 0 12px;
+		border-radius: 4px;
+		.bg-cheng;
+		.col-bai;
+	}
+}

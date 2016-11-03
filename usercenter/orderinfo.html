@@ -27,6 +27,9 @@
                     订单详情
                 </div>
             </div>
+            <div class="flex1 header-right">
+                <a href="input.html"><i class="icon iconfont font20"></i></a>
+            </div>
         </div>
     </div>
     <div class="container">
@@ -81,7 +84,8 @@
     <div id="bottom-nav">
         <div class="bottom-tab">
             <div class="l-right">
-                <a href="javascript:void(0)" class="cancel">取消订单</a>
+                <a href="javascript:void(0)" class="cancel" id="cancel">取消订单</a>
+                <a href="trans.html" class="cancel bg-slan mgl10">查看物流</a>
                 <a href="javascript:void(0)" class="confirm mgl10">付款</a>
             </div>
         </div>
@@ -89,4 +93,16 @@
 </body>
 <script src="../js/jquery-1.9.1.min.js" type="text/javascript"></script>
 <script src="../js/swiper-3.3.1.jquery.min.js" type="text/javascript"></script>
+<script src="../js/layer.js" type="text/javascript"></script>
+<script>
+    $('#cancel').on('click', function(){
+        layer.open({
+            title: [
+              '填写取消原因',
+              'background-color: #3c6191; color:#fff;'
+            ]
+            ,content: '<textarea name="reason" id="" rows="10" style="display:block;width: 90%;padding:8px; margin: 0 auto;" placeholder="请输入你取消订单的原因"></textarea><a href="" class="bg-cheng col-bai" style="display: block;padding: 8px;margin-top:12px;">确定</a>'
+        });
+    });
+</script>
 </html>
