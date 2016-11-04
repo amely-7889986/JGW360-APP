@@ -1334,6 +1334,7 @@ a {
   display: block;
   overflow: hidden;
   border-bottom: 1px solid #ddd;
+  padding-bottom: 4px;
 }
 .probox-info .commentbox .title {
   display: block;
@@ -2358,8 +2359,72 @@ a.exit {
   padding: 8px;
   border-bottom: 1px solid #ddd;
 }
-.my-comment h3 {
+.my-comment a.tit {
   margin: 4px auto;
+}
+.cominput {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+}
+.cominput .picbox {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+}
+.cominput .picbox .pic {
+  display: block;
+  overflow: hidden;
+  width: 18%;
+  border: 1px solid #ddd;
+}
+.cominput .picbox .pic img {
+  width: 100%;
+}
+.cominput .picbox h3 {
+  display: block;
+  overflow: hidden;
+  font-size: 1.4em;
+  font-weight: normal;
+  margin-left: 8px;
+}
+.cominput .level {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  height: 2.8em;
+  line-height: 2.8em;
+  padding-left: 8px;
+}
+.cominput .level input[type="radio"].star {
+  cursor: pointer;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0 4px;
+  color: #aaa;
+}
+.cominput .level input[type="radio"].star:checked {
+  color: #ffd85c;
+}
+.cominput .input {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+}
+.cominput a.submit {
+  display: block;
+  width: 40%;
+  height: 2.4em;
+  line-height: 2.4em;
+  margin: 8px auto;
+  background: #f35929;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.4em;
+  border-radius: .4em;
 }
 .ownerbox {
   display: block;
@@ -2391,6 +2456,118 @@ a.exit {
   border-radius: 4px;
   background: #f35929;
   color: #ffffff;
+}
+.leasebox {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+  padding: 8px;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #ddd;
+}
+.leasebox p {
+  display: block;
+  overflow: hidden;
+}
+.leasebox .state {
+  border-bottom: 1px solid #ddd;
+  height: 2em;
+  line-height: 2em;
+  margin-bottom: .4em;
+}
+.leasebox .time {
+  height: 2.8em;
+  line-height: 2.8em;
+}
+.leasebox a.submit {
+  display: inline-block;
+  overflow: hidden;
+  padding: 4px 8px;
+  color: #ffffff;
+  border-radius: 4px;
+  margin-left: 8px;
+}
+.leasebox .commentbox {
+  display: block;
+  overflow: hidden;
+  border-top: 1px solid #ddd;
+}
+.leasebox .commentbox .title {
+  display: block;
+  overflow: hidden;
+}
+.leasebox .commentbox .info {
+  display: block;
+  overflow: hidden;
+}
+.leaseform {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+}
+.leaseform .leaseinput {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+}
+.leaseform .leaseinput label {
+  width: 30%;
+  float: left;
+  font-size: 1.4em;
+  color: #f35929;
+  height: 2em;
+  line-height: 2em;
+}
+.leaseform .leaseinput span {
+  font-size: 1.4em;
+  height: 2em;
+  line-height: 2em;
+}
+.leaseform .leaseinput input {
+  float: left;
+  border: 1px solid #aaa;
+  display: inline-block;
+  width: 60%;
+  height: 2em;
+  line-height: 2em;
+  margin-top: .2em;
+}
+.leaseform a.submit {
+  display: block;
+  margin: 8px auto;
+  width: 40%;
+  background: #f35929;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.4em;
+  height: 2.4em;
+  line-height: 2.4em;
+  border-radius: .4em;
+}
+.quotebox {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1em;
+}
+.quotebox h3 {
+  margin: .2em auto;
+}
+.quotebox p {
+  line-height: 2em;
+}
+.quotebox a.submit {
+  display: inline-block;
+  overflow: hidden;
+  padding: 0 12px;
+  background: #f35929;
+  color: #ffffff;
+  text-align: center;
+  float: right;
+  border-radius: .4em;
 }
 .search {
   display: block;
