@@ -2553,7 +2553,9 @@ a.exit {
   border-bottom: 1px solid #ddd;
   margin-bottom: 1em;
 }
-.quotebox h3 {
+.quotebox h3,
+.quotebox .tit {
+  font-weight: 600;
   margin: .2em auto;
 }
 .quotebox p {
@@ -2568,6 +2570,13 @@ a.exit {
   text-align: center;
   float: right;
   border-radius: .4em;
+}
+.conectbox {
+  text-align: left;
+}
+.conectbox td {
+  border-bottom: 1px solid #ddd;
+  padding: 4px 0;
 }
 .search {
   display: block;
