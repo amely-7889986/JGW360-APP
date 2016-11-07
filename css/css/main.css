@@ -2578,6 +2578,83 @@ a.exit {
   border-bottom: 1px solid #ddd;
   padding: 4px 0;
 }
+.loginbox {
+  display: block;
+  overflow: hidden;
+  padding: 0 24px;
+  margin-top: 24px;
+}
+.loginbox .logo {
+  display: block;
+  width: 40%;
+  margin: 24px 30%;
+}
+.loginbox .logo img {
+  width: 100%;
+}
+.loginbox .inputbox {
+  display: block;
+  overflow: hidden;
+  padding-left: .8em;
+  height: 2.8em;
+  line-height: 2.8em;
+  border: 1px solid #aaa;
+  border-radius: 1.4em;
+  margin-bottom: 12px;
+  font-size: 1.4em;
+}
+.loginbox .inputbox input {
+  border: none;
+}
+.loginbox .inputbox input.w18 {
+  width: 18em;
+}
+.loginbox .inputbox input.w9 {
+  width: 9em;
+}
+.loginbox a.submit {
+  display: block;
+  overflow: hidden;
+  background: #f35929;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.4em;
+  height: 2.4em;
+  line-height: 2.4em;
+  border-radius: .4em;
+}
+.loginbox .loginlink {
+  display: block;
+  overflow: hidden;
+  margin-top: 12px;
+  font-size: 1em;
+}
+.loginbox .loginlink a:active,
+.loginbox .loginlink a:hover {
+  color: #f35929;
+}
+.loginbox .confirm {
+  display: block;
+  overflow: hidden;
+}
+.loginbox .confirm a.code {
+  display: inline-block;
+  overflow: hidden;
+  background: #f35929;
+  color: #ffffff;
+  text-align: center;
+  height: 2.8em;
+  line-height: 2.8em;
+  font-size: 1.4em;
+  padding: 0 8px;
+  border-radius: 8px;
+  float: right;
+}
+.loginbox .agreement {
+  display: block;
+  overflow: hidden;
+  margin: 12px auto;
+}
 .search {
   display: block;
   overflow: hidden;
